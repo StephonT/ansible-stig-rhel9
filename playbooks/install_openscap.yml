@@ -1,0 +1,13 @@
+---
+- name: Install OpenSCAP scanner and SCAP content
+  hosts: ipaclients
+  become: true
+  tasks:
+
+    - name: Install OpenSCAP scanner and SCAP content
+      ansible.builtin.dnf:
+        name:
+          - openscap-scanner
+          - scap-security-guide
+          - xml-common
+        state: present
