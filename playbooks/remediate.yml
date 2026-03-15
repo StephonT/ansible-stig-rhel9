@@ -1,0 +1,6 @@
+---
+- name: Apply DISA STIG remediation
+  hosts: stig_targets
+  become: true
+  roles:
+    - role: RedHatOfficial.rhel9_stig
