@@ -1,6 +1,6 @@
 ---
 - name: Run DISA STIG compliance scan
-  hosts: all
+  hosts: test
   become: true
   vars: 
     stig_profile: xccdf_org.ssgproject.content_profile_stig
