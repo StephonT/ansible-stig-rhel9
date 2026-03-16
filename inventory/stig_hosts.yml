@@ -1,10 +1,12 @@
-stig_targets:
+prod:
   hosts:
-    ipaclient1:
-      ansible_host: 192.168.1.131
     ipaclient2:
       ansible_host: 192.168.1.132
     ipaclient3:
       ansible_host: 192.168.1.133
 
 
+test:
+  hosts:
+    ipaclient1:
+      ansible_host: 192.168.1.131
